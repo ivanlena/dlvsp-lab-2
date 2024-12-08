@@ -115,9 +115,9 @@ After cloning the necessary repositories, some errors must be corrected to succe
 
     - Go to /mega.pytorch/mega_core/layers/roi_pool.py and comment lines 10 and 56
 
-    - Go to /mega.pytorch/mega_core/layers/roi_pool.py and comment lines 10 and 57
+    - Go to /mega.pytorch/mega_core/layers/roi_align.py and comment lines 10 and 57
 
-    - Go to /mega.pytorch/demo/predictor.py
+    - Go to /mega.pytorch/demo/predictor.py and change (x, y) to (int(x), int(y)) in line 611 (cv2.putText function)
 
 Follow the instructions detailed on demo/README.md to run the demo code using both BASE and MEGA approaches. Use the “Inference on image folder” mode with the example.
 
