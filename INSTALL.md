@@ -109,11 +109,9 @@ mkdir visualization
 
 From the root folder of https://github.com/Scalsol/mega.pytorch, go to ‘Main Results’ section, download ‘singleframe baseline’ and ‘MEGA’ model checkpoints (backbone ResNet-101) and place them in the ‘mega.pytorch’ folder.
 
-Change cloning to my repositories to avoid apex and opencv errors:
+After cloning the necessary repositories, some errors must be corrected to successfully run the demo. Please follow these steps carefully:
 
-There are some errors in the cloned repositories that have to be changed in order to run the demo:
-
-    - Go to /mega.pytorch/mega_core/layers/nms.py, comment line 5 (import) and remove amp.float_function function (leave the _C.nms)
+    - Go to /mega.pytorch/mega_core/layers/nms.py, comment line 5 (import) and remove amp.float_function function (leave the "_C.nms")
 
     - Go to /mega.pytorch/mega_core/layers/roi_pool.py and comment lines 10 and 56
 
